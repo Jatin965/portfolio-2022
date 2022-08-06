@@ -1,13 +1,14 @@
 import React from "react";
 import "./App.scss";
-import SideBar from "./components/Nav/SideBar";
+import LeftSideBar from "./components/Nav/LeftSideBar";
+import RightSidebar from "./components/Nav/RightSidebar";
 
 function App() {
   return (
     <div className="container">
-      <SideBar />
+      <LeftSideBar />
       <main></main>
-      <footer></footer>
+      <RightSidebar />
     </div>
   );
 }
