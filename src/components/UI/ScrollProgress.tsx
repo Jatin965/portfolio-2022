@@ -1,24 +1,27 @@
 import { useState, FC } from "react";
 
 const ScrollProgress: FC<{ scroll: number }> = ({ scroll }) => {
+  const circumference = Math.PI * 70;
+  const dash = (circumference * scroll) / 100;
   return (
-    <svg width={100} height={100} viewBox="0 0 100 100">
+    <svg width={80} height={80} viewBox="0 0 80 80">
       <circle
         fill="none"
         stroke="#ccc"
-        cx={50}
-        cy={50}
-        r={40}
+        cx={40}
+        cy={40}
+        r={35}
         strokeWidth={10}
       />
       <circle
         fill="none"
         stroke={"#87d"}
-        cx={50}
-        cy={50}
-        r={40}
+        cx={40}
+        cy={40}
+        r={35}
         strokeWidth={10}
-        transform={`rotate(-90 50 50)`}
+        transform={`rotate(-90 40 40)`}
+        strokeDasharray={circumference - dash}
         strokeLinecap="round"
       />
       <text
@@ -26,7 +29,7 @@ const ScrollProgress: FC<{ scroll: number }> = ({ scroll }) => {
         fontSize="16px"
         x="50%"
         y="50%"
-        dy="10px"
+        dy="8px"
         textAnchor="middle"
       >
         {scroll}%
