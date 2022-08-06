@@ -7,7 +7,15 @@ function App() {
   return (
     <div className="container">
       <LeftSideBar />
-      <main></main>
+      <main>
+        <div className="wrapper">
+          <div style={{height: "100vh", background:"purple"}}>Main Content</div>
+          <div style={{height: "100vh",background: "orange"}}>Main Content</div>
+          <div style={{height: "100vh",background: "red"}}>Main Content</div>
+          <div style={{height: "100vh",background: "cyan"}}>Main Content</div>
+          <div style={{height: "100vh",background: "green"}}>Main Content</div>
+        </div>
+      </main>
       <RightSidebar />
     </div>
   );
