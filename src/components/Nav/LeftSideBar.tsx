@@ -3,7 +3,12 @@ import React from "react";
 const LeftSideBar = () => {
   return (
     <div className="sidebar">
-      <h1>Sidebar</h1>
+      <div className="container">
+        <h1>JS</h1>
+        <p>MENU</p>
+        <p>Share</p>
+        {/* <ul></ul> */}
+      </div>
     </div>
   );
 };

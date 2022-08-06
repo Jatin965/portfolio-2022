@@ -4,4 +4,13 @@
   background: #000;
   overflow: hidden;
   color: #fff;
+
+  .container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+  }
 }
