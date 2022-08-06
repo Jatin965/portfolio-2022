@@ -1,10 +1,13 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
+import SideBar from "./components/Nav/SideBar";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Basic App</h1>
+    <div className="container">
+      <SideBar />
+      <main></main>
+      <footer></footer>
     </div>
   );
 }
