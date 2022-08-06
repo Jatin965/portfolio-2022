@@ -1,9 +1,10 @@
-import React from "react";
+import { FC } from "react";
+import ScrollProgress from "../UI/ScrollProgress";
 
-const RightSidebar = () => {
+const RightSidebar: FC<{ scroll: number }> = ({ scroll }) => {
   return (
     <div className="sidebar">
-      <h1>Right SideBar</h1>
+      <ScrollProgress scroll={scroll} />
     </div>
   );
 };
