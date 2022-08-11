@@ -1,5 +1,6 @@
 import { FC } from "react";
-// import ScrollProgress from "../UI/ScrollProgress";
+
+import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 
 const RightSidebar: FC<{ scroll: number }> = ({ scroll }) => {
   return (
@@ -13,7 +14,15 @@ const RightSidebar: FC<{ scroll: number }> = ({ scroll }) => {
           <div className="bar">1</div>
           <div className="bar">1</div>
         </div>
-        <p>Scroll</p>
+
+        <div className="progress-container">
+          <CircularProgressbar
+            value={scroll}
+            text={`${scroll}%`}
+            strokeWidth={8}
+            styles={buildStyles({ textColor: "#fff", pathColor: "#A890FE" })}
+          />
+        </div>
       </div>
     </div>
   );
