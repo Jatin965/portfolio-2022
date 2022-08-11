@@ -12,6 +12,16 @@ const Menu = () => {
         <span></span>
         <span></span>
       </div>
+
+      <div className={open ? "menu-list open" : "menu-list"}>
+        <ul>
+          <li><a href="#" data-text="Home">Home</a></li>
+          <li><a href="#" data-text="About">About</a></li>
+          <li><a href="#" data-text="Work">Work</a></li>
+          <li><a href="#" data-text="Tech">Tech</a></li>
+          <li><a href="#" data-text="Portfolio">Portfolio</a></li>
+        </ul>
+      </div>
     </div>
   );
 };
