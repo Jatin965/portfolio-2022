@@ -70,6 +70,7 @@
         position: fixed;
         top: 0;
         left: 0px;
+        right: 0;
         clip-path: circle(30px at 50px calc(50vh - 15px));
         transition: all 500ms ease-in-out;
 
@@ -125,6 +126,21 @@
             }
           }
         }
+      }
+      .home {
+        background: brown;
+      }
+      .about {
+        background: grey;
+      }
+      .work {
+        background: green;
+      }
+      .tech {
+        background: purple;
+      }
+      .portfolio {
+        background: orange;
       }
     }
   }
