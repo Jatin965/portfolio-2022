@@ -20,7 +20,7 @@ const Menu = () => {
             onMouseOut={() => setHover("")}
             onMouseOver={() => setHover("home")}
           >
-            <a href="#" data-text="Home">
+            <a href="/" data-text="Home">
               Home
             </a>
           </li>
@@ -28,7 +28,7 @@ const Menu = () => {
             onMouseOut={() => setHover("")}
             onMouseOver={() => setHover("about")}
           >
-            <a href="#" data-text="About">
+            <a href="/" data-text="About">
               About
             </a>
           </li>
@@ -36,7 +36,7 @@ const Menu = () => {
             onMouseOut={() => setHover("")}
             onMouseOver={() => setHover("work")}
           >
-            <a href="#" data-text="Work">
+            <a href="/" data-text="Work">
               Work
             </a>
           </li>
@@ -44,7 +44,7 @@ const Menu = () => {
             onMouseOut={() => setHover("")}
             onMouseOver={() => setHover("tech")}
           >
-            <a href="#" data-text="Tech">
+            <a href="/" data-text="Tech">
               Tech
             </a>
           </li>
@@ -52,7 +52,7 @@ const Menu = () => {
             onMouseOut={() => setHover("")}
             onMouseOver={() => setHover("portfolio")}
           >
-            <a href="#" data-text="Portfolio">
+            <a href="/" data-text="Portfolio">
               Portfolio
             </a>
           </li>
