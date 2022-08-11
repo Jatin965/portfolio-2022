@@ -3,7 +3,7 @@ import Menu from "./Sub/Menu";
 
 const LeftSideBar = () => {
   return (
-    <div className="sidebar">
+    <div className="left-sidebar">
       <div className="container">
         <h1>JS</h1>
         <Menu />

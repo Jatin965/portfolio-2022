@@ -4,37 +4,19 @@ const ScrollProgress: FC<{ scroll: number }> = ({ scroll }) => {
   const circumference = Math.PI * 70;
   const dash = (circumference * scroll) / 100;
   return (
-    <svg width={80} height={80} viewBox="0 0 80 80">
-      <circle
-        fill="none"
-        stroke="#ccc"
-        cx={40}
-        cy={40}
-        r={35}
-        strokeWidth={10}
-      />
-      <circle
-        fill="none"
-        stroke={"#87d"}
-        cx={40}
-        cy={40}
-        r={35}
-        strokeWidth={10}
-        transform={`rotate(-90 40 40)`}
-        strokeDasharray={circumference - dash}
-        strokeLinecap="round"
-      />
-      <text
-        fill="#fff"
-        fontSize="16px"
-        x="50%"
-        y="50%"
-        dy="8px"
-        textAnchor="middle"
+    <div className="progress">
+      <span
+        className="title timer"
+        data-from="0"
+        data-to={scroll}
+        data-speed="1800"
       >
-        {scroll}%
-      </text>
-    </svg>
+        {scroll}
+      </span>
+      <div className="overlay"></div>
+      <div className="left"></div>
+      <div className="right"></div>
+    </div>
   );
 };
 
